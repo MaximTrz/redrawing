@@ -1,0 +1,39 @@
+@import 'colors.scss';
+@import 'reset.scss';
+
+
+.imageBox{
+    height: 500px;
+    width: 800px;
+    display: flex;
+    align-items: stretch;
+    position: relative;
+}
+
+.divider{
+    width: 10px;
+    background-color: black;  
+    position: absolute;      
+    height: 100%;
+    z-index: 1000;
+}
+
+.imageBlock{
+    overflow: hidden;
+    position: absolute;    
+   &_left{
+        left: 0;
+        top: 0;       
+       background-color: yellow;
+       z-index: 3;
+   }
+   &_right{
+       
+       left: 0;
+       top: 0;
+       z-index: 1;    
+       background-color: red;
+   };
+}
+
+

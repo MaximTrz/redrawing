@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+}
+
+input,
+button:focus {
+  outline: none;
+}
+
+.imageBox {
+  height: 500px;
+  width: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  position: relative;
+}
+
+.divider {
+  width: 10px;
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  z-index: 1000;
+}
+
+.imageBlock {
+  overflow: hidden;
+  position: absolute;
+}
+
+.imageBlock_left {
+  left: 0;
+  top: 0;
+  background-color: yellow;
+  z-index: 3;
+}
+
+.imageBlock_right {
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-color: red;
+}
